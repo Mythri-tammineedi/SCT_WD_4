@@ -1,0 +1,137 @@
+/* General styles */
+body {
+   font-family: 'Poppins', sans-serif;
+   background: linear-gradient(to right, #ffafbd, #ffc3a0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   color: #333;
+ }
+ 
+ /* Container styling */
+ .app-container {
+   background: white;
+   padding: 30px;
+   border-radius: 12px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+   width: 400px;
+   text-align: center;
+   position: relative;
+ }
+ 
+ /* Header */
+ h1 {
+   font-size: 24px;
+   color: #ff5e62;
+   margin-bottom: 20px;
+   font-weight: bold;
+ }
+ 
+ /* Form styles */
+ form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ 
+ input[type="text"], input[type="datetime-local"] {
+   padding: 12px;
+   border: none;
+   border-radius: 8px;
+   background-color: #f1f1f1;
+   transition: 0.3s;
+ }
+ 
+ input[type="text"]:focus, input[type="datetime-local"]:focus {
+   background-color: #ffe3e3;
+   outline: none;
+ }
+ 
+ button {
+   padding: 12px;
+   border: none;
+   border-radius: 8px;
+   background-color: #ff5e62;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ button:hover {
+   background-color: #ff3b47;
+ }
+ 
+ ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 20px;
+ }
+ 
+ li {
+   background: #ffe3e3;
+   margin-bottom: 12px;
+   padding: 12px;
+   border-radius: 8px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+ li:hover {
+   transform: translateY(-3px);
+ }
+ 
+ li.completed {
+   text-decoration: line-through;
+   background-color: #d1e7dd;
+ }
+ 
+ li span {
+   flex: 1;
+   margin-right: 15px;
+   font-weight: bold;
+ }
+ 
+ li button {
+   background: #dc3545;
+   border: none;
+   color: white;
+   padding: 8px 10px;
+   cursor: pointer;
+   border-radius: 6px;
+   transition: 0.3s;
+ }
+ 
+ li button:hover {
+   background: #c82333;
+ }
+ 
+ /* Task buttons */
+ li .edit-btn {
+   background: #ffae00;
+ }
+ 
+ li .edit-btn:hover {
+   background: #ff8f00;
+ }
+ 
+ /* Animations */
+ li {
+   animation: fadeIn 0.4s ease-in-out;
+ }
+ 
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: scale(0.9);
+   }
+   to {
+     opacity: 1;
+     transform: scale(1);
+   }
+ }
+ 
